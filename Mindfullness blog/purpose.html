@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>purpose</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+
+
+
+<style>
+   blockquote{
+  font-size: 1.4em;
+  width:60%;
+  margin:50px auto;
+  font-family:Open Sans;
+  font-style:italic;
+  color: #555555;
+  padding:1.2em 30px 1.2em 75px;
+  border-left:8px solid #78C0A8 ;
+  line-height:1.6;
+  position: relative;
+  background:#EDEDED;
+  animation:zoomIn 1s ease forwards;
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.5);
+        opacity:0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+blockquote::before{
+  font-family:Arial;
+  content: "\201C";
+  color:#78C0A8;
+  font-size:4em;
+  position: absolute;
+  left: 10px;
+  top:-10px;
+}
+
+blockquote::after{
+  content: '';
+  
+}
+
+blockquote span{
+  display:block;
+  color:#333333;
+  font-style: normal;
+  font-weight: bold;
+  margin-top:1em;
+}
+.purpose{
+    border:2px double black;
+    height:auto;
+    width:auto;
+    border-radius:20px;
+    margin-top:65px;
+    margin-right:none;
+   margin-left:290px;
+    padding:10px;
+    transition: transform 0.5s ease;
+    background:rgb(22, 22, 82);
+    color:white;
+    
+}
+.purpose:hover{
+   
+            transform: scale(1.2);
+        }
+        .container{
+          overflow:auto;
+          padding:20px;
+        }
+        .container img{
+          float:left;
+          margin-right:20px;
+          /* max-width:300px; */
+
+        }
+.container p{
+  text-align:justify;
+}
+
+
+
+
+
+
+.ag-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+
+
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  padding: 50px 0;
+}
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+
+  border-radius: 28px;
+}
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: rgb(129, 45, 45);
+ 
+
+  overflow: hidden;
+
+  position: relative;
+}
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #FFF;
+}
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 30px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #FFF;
+
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9b234;
+
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background-color: #3ecd5e;
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e44002;
+}
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #952aff;
+}
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}
+
+
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
+.bg{
+  background-image: url("bg1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+body {
+            margin: 0;
+            height: 100vh;
+            /* display: flex;
+            justify-content: center; */
+            align-items: center;
+            background: linear-gradient(135deg, #6b5b95, #feb236);
+            font-family: 'Arial', sans-serif;
+        }
+
+        .header-container {
+            text-align: center;
+            color: white;
+            z-index: 2;
+            position: relative;
+        }
+
+        .header-title {
+            font-size: 4rem;
+            font-weight: bold;
+            opacity: 0; /* Initially hidden for animation */
+            transform: scale(0.8); /* Initial scale for animation */
+            transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        .header-subtitle {
+            font-size: 1.5rem;
+            margin-top: 20px;
+            opacity: 0; /* Initially hidden for animation */
+            transition: opacity 0.5s ease-in-out 0.3s; /* Delay for subtitle */
+        }
+
+</style>
+<body>
+
+  <div class="header-container">
+    <h1 class="header-title">PURPOSE</h1>
+    <p class="header-subtitle">Purpose fuels passion, ignite your soul</p>
+</div>
+
+<!-- Bootstrap JS and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    // Fade in effect for the header
+    document.addEventListener('DOMContentLoaded', function () {
+        const title = document.querySelector('.header-title');
+        const subtitle = document.querySelector('.header-subtitle');
+
+        setTimeout(() => {
+            title.style.opacity = 1;
+            title.style.transform = 'scale(1)'; // Scale to normal size
+        }, 100);
+
+        setTimeout(() => {
+            subtitle.style.opacity = 1; // Show subtitle after title
+        }, 500);
+    });
+</script>
+
+
+
+
+
+
+
+
+
+    <blockquote>
+      The purpose of life is to contribute in some way to making things better. It is not measured by what we get, but by what we give. The true meaning of life is to plant trees under whose shade you do not expect to sit.
+        <span>Nelson Henderson</span>
+      </blockquote>
+      <!-- <div class="container">
+        <img src="purpose.jpg" class="img" height="300px" width="280x">
+      <p class="purpose">
+        Finding the true purpose of your life is a journey of self-discovery and growth. It’s about exploring your passions, values, and what genuinely brings you fulfillment. Your purpose often lies in the things that ignite your spirit, inspire you to keep pushing forward, and connect you to something larger than yourself. It’s not always clear at first, but through reflection, experiences, and embracing challenges, you begin to uncover what truly matters. Your purpose is not just a destination; it’s the path you walk, full of meaning, intention, and impact.
+      </p>
+    </div> -->
+    
+      
+
+   
+    <br><br><br>
+
+
+
+
+
+
+    <div class="ag-format-container">
+      <div class="ag-courses_box">
+        <div class="ag-courses_item">
+          <a href="whatispurpose.html" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+             WHAT IS PURPOSE?
+            </div>
+    
+           
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="discoveringpurpose.html" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+             DISCOVERING PURPOSE
+            </div>
+    
+            
+          </a>
+        </div>
+    
+        <div class="ag-courses_item">
+          <a href="evolutionofpurpose.html" class="ag-courses-item_link">
+            <div class="ag-courses-item_bg"></div>
+    
+            <div class="ag-courses-item_title">
+              EVOLUTION OF PURPOSE
+            </div>
+    
+          </a>
+        </div>
+    
+        </div>
+    </body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>physical balance</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff; /* Light blue */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Main section */
+        .hero {
+            background-color: #431c1c; /* Light pink */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: slideDown 1.5s ease-in-out;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: white;
+            max-width: 700px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Section with information */
+        .content-section {
+            padding: 80px 20px;
+            background-color:beige; /* Light peach */
+            text-align: center;
+        }
+        
+        .content-section h2 {
+            color: #005f99; /* Light blue */
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .content-section .row {
+            margin-bottom: 50px;
+        }
+        
+        .content-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        
+        .content-section p {
+            font-size: 1.1rem;
+            color: #4a4a4a;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        /* Footer */
+        footer {
+           background:black;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 0;
+            color:white;
+        }
+        .head{
+            text-align:left;
+        }
+
+        
+        body{
+            background-color:beige;
+          
+        }
+        .head2{
+            text-align:left;
+            margin-left:70px;
+        }
+        .img2{
+            height:200px;
+            width:400px;
+           border-radius:10px;
+           overflow:hidden
+        }
+        .img2{
+            transition:transform 0.5s ease;
+        }
+        .img2:hover{
+            transform: scale(1.1);
+        }
+       
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Physical Balance</h1>
+            <p class="para">Physical Balance is the ability to maintain stability and control over one's body during movement and various activities. It enhances overall health and fitness, reducing the risk of injury and improving coordination. Regular practice through exercises like yoga and balance training fosters strength, flexibility, and confidence in physical performance.</p>
+        </div>
+    </section>
+
+    <!-- Content Section 1 -->
+     <div class="img-container">
+    <section class="content-section">
+        <div class="container">
+            <h2><b>NUTRITION AND DIET</b></h2>
+            
+            <h3 class="head"><b>HEALTHY MEAL PREPPING</b></h3>
+            <br>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="meal prep.jpg" alt="meal prepping" class="img2">
+                </div>
+                <div class="col-md-6">
+                    <p class="para">Meal prepping for balanced eating is an effective strategy to maintain healthy nutrition. By planning and preparing meals in advance, individuals can control portion sizes, ensure nutrient diversity, and save time during busy days. This practice promotes healthier choices, reduces reliance on convenience foods, and fosters a consistent eating routine.</p>
+                </div>
+            </div>
+           
+            </div>
+            
+        
+    </section>
+
+    <section class="container-fluid py-5" id="self-reflection">
+        <h3 class="head2"><b>HYDRATION</b></h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <h2 class="mb-4">STRENGTHS AND WEAKNESSES</h2> -->
+            <p class="mb-3">Hydration is essential for overall health and well-being. Drinking enough water supports bodily functions, aids digestion, and enhances physical performance. Proper hydration improves concentration and energy levels, helping individuals maintain focus throughout the day. Prioritizing water intake is vital for optimal health, supporting both physical and mental vitality.</p>
+           
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="hydration.jpg" class="img2" alt="hydration">
+          </div>
+        </div>
+      </section>
+
+    <!-- Content Section 2 -->
+    <section class="content-section">
+        <div class="container">
+            <h2><b>EXCERCISE REGIMEN</b></h2>
+            
+            <h3 class="head"><b>BALANCED WORKOUT SCHEDULE</b></h3>
+            <br>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="balanced workout schedule.jpg" alt="balanced workout schedule" class="img2" >
+                </div>
+                <div class="col-md-6">
+                    <p class="para">Creating a balanced workout schedule involves incorporating various types of exercises, such as cardio, strength training, and flexibility work, to promote overall fitness. A well-structured routine helps prevent burnout, reduces injury risk, and ensures all muscle groups are engaged. Consistency and variety are key for achieving fitness goals and maintaining motivation.</p>
+                </div>
+            </div>
+           
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid py-5" id="self-reflection"></section>
+        <h3 class="head2"><b>PHYSICAL ACTIVITY</b></h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <h2 class="mb-4">STRENGTHS AND WEAKNESSES</h2> -->
+            <p class="mb-3">Physical activity plays a crucial role in enhancing mental health by reducing symptoms of anxiety and depression. Exercise releases endorphins, which boost mood and promote feelings of well-being. Regular physical activity also improves cognitive function, increases resilience, and fosters a sense of accomplishment, contributing to overall emotional balance and stability.</p>
+           
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="physical activity.jpg" class="img2" alt="physical activity">
+          </div>
+        </div>
+      </section>
+
+    <!-- Content Section 3 -->
+    <section class="content-section">
+        <div class="container">
+            <h2><b>REST AND RECOVERY</b></h2>
+            <h3 class="head"><b>QUALITY SLEEP</b></h3>
+            <br>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="quality sleep.jpg" alt="quality sleep" class="img2">
+                </div>
+                <div class="col-md-6">
+                    <p class="para">Quality sleep is vital for overall health and well-being, impacting physical, mental, and emotional functioning. It supports cognitive processes, strengthens the immune system, and regulates hormones. Consistent, restorative sleep enhances mood, reduces stress, and boosts energy levels, ultimately contributing to better performance and a higher quality of life.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-5" id="self-reflection">
+        <h3 class="head2"><b>IMPROVING SLEEP HYGIENE</b></h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <h2 class="mb-4">STRENGTHS AND WEAKNESSES</h2> -->
+            <p class="mb-3">Techniques for improving sleep hygiene are essential for achieving restful slumber. Establishing a consistent sleep schedule, creating a relaxing bedtime routine, and optimizing the sleep environment can significantly enhance sleep quality. Limiting screen time, avoiding stimulants before bed, and practicing relaxation techniques promote better sleep, leading to increased energy and overall well-being.</p>
+           
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="improve sleep cycle.jpg" class="img2" alt="improve sleep hygiene">
+          </div>
+        </div>
+      </section>
+    
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Balance. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+   
+</body>
+</html>

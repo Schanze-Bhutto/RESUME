@@ -11,14 +11,151 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 
 <style>
-    .part1{
-        height:300px;
-        width:100%;
-        background-color:rgb(77, 23, 23);
+    .box1{
+        height:1200px;
+        width:300px;
+        background-color:rgb(66, 26, 26);
+        float:left;
+        border-right:4px solid black;
     }
+    .box2{
+        height:800px;
+        background-color:rgb(252, 251, 244);
+        float: 80px right;
+    }
+    .resumeheading{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size:50px;
+    }
+    .education{
+        color:white;
+    }
+    .projects{
+        text-decoration:none;
+        color:white;
+
+    }
+    .projects:hover{
+        text-decoration:underline;
+        color:white;
+        background:none;
+    }
+    .projectsheading{
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    .websites{
+        background-color:rgb(254, 249, 240);
+        height:220px;
+        width:18rem;
+        border: 2px solid rgb(66, 26, 26);
+    }
+   
+    .web{
+        color:black;
+    }
+    .web:hover{
+        color:black;
+        text-decoration:underline;
+        background: none;
+    }
+    .head2{
+        background-color:rgb(66, 26, 26);
+        color:white;
+    }
+    .intro{
+        border: 2px solid white;
+        background-color:rgb(66, 26, 26);
+        color:rgb(253, 228, 228);
+        padding:20px;
+    }
+    
+    
+
 </style>
+
 </head>
 <body>
-    <div class="part1"></div>
+<div class="box1">
+    <br><br><br>
+    <h3 class="education"><u>EDUCATION</u></h3>
+    <br>
+    <h5 class="education">HDSE Diploma</h5>
+    <p class="education">Aptech</p>
+
+    <h3 class="education"><u>PROJECTS</u></h3>
+    <p ><a href="First Website/index.html" class="projects">Introduction to Html</a></p>
+    <p ><a href="Cozy Corner/index.html" class="projects">The Cozy Corner</a></p>
+    <p ><a href="Mindfullness blog/index.html" class="projects">Self Help Blog Page</a></p>
+    <p ><a href="https://www.figma.com/proto/NyOhbUtvPWCxhwMChtUC9c/the-dollar-store?node-id=49-251&p=f&t=BKGo7WYbfiLdvRMr-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=49%3A251&show-proto-sidebar=1" class="projects">UI/UX Project</a></p>
+</div>
+
+<div class="box2">
+    <div class="head2">
+    <h1 class="resumeheading"><center>RESUME</center></h1>
+    <br>
+    <h1 class="name"><u>Schanze Bhutto</u></h1>
+    <p>Student</p>
+
+    <h2>ABOUT ME</h2>
+    <p class="intro">A passionate Software Engineering student with expertise in Front-End Web Development and UI/UX Design, blending creativity with technical precision. Enthusiastic about literature and art, bringing a unique perspective to design and user experience. Adaptable, innovative, and driven by continuous learning in dynamic environments to craft seamless and engaging digital solutions.</p>
+    <br><br>
+</div>
+    <br><br>
+    <h2 class="name">SKILLS</h2>
+    <p>- Office Automation</p>
+    <p>- Front end Web Development</p>
+    <p>- UI/UX Designing</p>
+    <p>- Graphic Designing</p>
+    <br><br>
+
+    <h2 class="name">MY PROJECTS</h2>
+    <div class="row">
+        <div class="col-sm-3 my-5">
+        <div class="card" style="width: 18rem;">
+            <a href="First Website/index.html">
+                <div class="websites">
+                    <br><br><br>
+                    <h5 class="web">Introduction to HTML</h5>
+                </div>
+            </a>
+            </div>
+          </div>
+
+        <div class="col-sm-3 my-5">
+            <div class="card" style="width: 18rem;">
+                <a href="Cozy Corner/index.html">
+                <div class="websites">
+                    <br><br><br>
+                    <h5 class="web">The Cozy Corner</h5>
+                </div>
+                </a>
+                </div>
+        </div>
+
+        <div class="col-sm-3 my-5">
+            <div class="card" style="width: 18rem;">
+                <a href="Mindfullness blog/index.html">
+                    <div class="websites">
+                        <br><br><br>
+                    <h5 class="web">Self-Help blog</h5>
+                    </div>
+                </a>
+                </div>
+        </div>
+
+        <div class="col-sm-3 my-5">
+            <div class="card" style="width: 18rem;">
+                <a href="https://www.figma.com/proto/NyOhbUtvPWCxhwMChtUC9c/the-dollar-store?node-id=49-251&p=f&t=BKGo7WYbfiLdvRMr-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=49%3A251&show-proto-sidebar=1">
+                    <div class="websites">
+                        <br><br><br>
+                    <h5 class="web">UI/UX Project</h5>
+                    </div>
+                </a>
+                </div>
+        </div>
+
+    </div>
+    </div>
+</div>
 </body>
 </html>

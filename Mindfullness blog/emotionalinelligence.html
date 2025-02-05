@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional intelligence</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff; /* Light blue */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Main section */
+        .hero {
+            background-color: #431c1c; /* Light pink */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: slideDown 1.5s ease-in-out;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: white;
+            max-width: 700px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Section with information */
+        .content-section {
+            padding: 80px 20px;
+            background-color:beige; /* Light peach */
+            text-align: center;
+        }
+        
+        .content-section h2 {
+            color: #005f99; /* Light blue */
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .content-section .row {
+            margin-bottom: 50px;
+        }
+        
+        .content-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        
+        .content-section p {
+            font-size: 1.1rem;
+            color: #4a4a4a;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        /* Footer */
+        footer {
+           background:black;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 0;
+            color:white;
+        }
+        .head{
+            text-align:left;
+        }
+
+        
+        body{
+            background-color:beige;
+          
+        }
+        .head2{
+            text-align:left;
+            margin-left:70px;
+        }
+        .img2{
+            height:200px;
+            width:400px;
+           border-radius:10px;
+           overflow:hidden
+        }
+        .img2{
+            transition:transform 0.5s ease;
+        }
+        .img2:hover{
+            transform: scale(1.1);
+        }
+       
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Emotional Intelligence</h1>
+            <p class="para">Emotional intelligence is the ability to understand and manage emotions in oneself and others. It fosters empathy, effective communication, and strong relationships, enabling individuals to navigate social complexities with grace. By enhancing emotional awareness, one can respond thoughtfully to challenges, leading to deeper connections and greater personal and professional success.</p>
+        </div>
+    </section>
+
+    <!-- Content Section 1 -->
+     <div class="img-container">
+    <section class="content-section">
+        <div class="container">
+            <h2><b>SELF REGULATION</b></h2>
+            
+            <h3 class="head"><b>IMPULSE CONTROL</b></h3>
+            <br>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="impulse control.jpg" alt="impulse control" class="img2" height="200px" width="400px">
+                </div>
+                <div class="col-md-6">
+                    <p class="para">Impulse control is essential for making thoughtful decisions. By learning to manage urges and delay gratification, you develop the discipline necessary to navigate life's challenges. This skill enhances self-control, leading to better choices and healthier habits, ultimately contributing to personal and professional success.</p>
+                </div>
+            </div>
+           
+            </div>
+            
+        
+    </section>
+
+    <section class="container-fluid py-5" id="self-reflection">
+        <h3 class="head2"><b>EMOTIONAL MANAGEMENT</b></h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <h2 class="mb-4">STRENGTHS AND WEAKNESSES</h2> -->
+            <p class="mb-3">Emotional management involves strategies to regulate your feelings effectively. Techniques such as deep breathing, mindfulness, and cognitive restructuring allow you to respond to emotions constructively. By cultivating this skill, you enhance your resilience and maintain composure in stressful situations, promoting overall well-being and healthier interactions.</p>
+           
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="emotional management.jpg" class="img2" alt="emotional management" height="100px" width="300px">
+          </div>
+        </div>
+      </section>
+
+    <!-- Content Section 2 -->
+    <section class="content-section">
+        <div class="container">
+            <h2><b>EMPATHY</b></h2>
+            
+            <h3 class="head"><b>ACTIVE LISTENING</b></h3>
+            <br>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="active listening.jpg" alt="active listening" class="img2" height="200px" width="400px">
+                </div>
+                <div class="col-md-6">
+                    <p class="para">Active listening is a fundamental skill for fostering empathy. By fully focusing on others during conversations, you deepen your understanding of their emotions and perspectives. This practice strengthens relationships and builds trust, creating a supportive environment where individuals feel valued and heard.</p>
+                </div>
+            </div>
+           
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid py-5" id="self-reflection"></section>
+        <h3 class="head2"><b>COMPASSIONATE RESPONSE</b></h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <h2 class="mb-4">STRENGTHS AND WEAKNESSES</h2> -->
+            <p class="mb-3">A compassionate response involves empathizing with others' emotions and offering support. By practicing kindness and understanding, you create a safe space for open communication. This ability to connect emotionally enhances relationships, fosters trust, and encourages a positive environment where everyone feels valued and understood.</p>
+           
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="compassion.jpg" class="img2" alt="compassionate response">
+          </div>
+        </div>
+      </section>
+
+    <!-- Content Section 3 -->
+    <section class="content-section">
+        <div class="container">
+            <h2><b>SOCIAL SKILLS</b></h2>
+            <h3 class="head"><b>CONFLICT RESOLUTION</b></h3>
+            <br>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="conflict resolution.jpg" alt="conflict resolution" class="img2">
+                </div>
+                <div class="col-md-6">
+                    <p class="para">Conflict resolution is the ability to navigate disagreements constructively. By employing techniques such as active listening, empathy, and problem-solving, you can address issues calmly and find mutually beneficial solutions. This skill promotes healthier relationships and fosters a positive environment, enabling individuals to grow and learn from challenges together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-5" id="self-reflection">
+        <h3 class="head2"><b>NETWORKING</b></h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <h2 class="mb-4">STRENGTHS AND WEAKNESSES</h2> -->
+            <p class="mb-3">Networking is the art of building and nurturing professional relationships. By actively engaging with others in your field, you create opportunities for collaboration and support. This skill not only enhances career prospects but also fosters a sense of community, enabling you to learn from others and share valuable insights.</p>
+           
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="networking.jpg" class="img2" alt="networking">
+          </div>
+        </div>
+      </section>
+    
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Emotional Intelligence. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+   
+</body>
+</html>

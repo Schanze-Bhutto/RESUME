@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recommendations</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+
+<style>
+    body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+
+
+        .hero {
+            background-color: #431c1c; /* Light pink */
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: slideDown 1.5s ease-in-out;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: white;
+            max-width: 700px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+
+
+
+
+        h1 {
+            text-align: center;
+            font-size: 3em;
+            margin-top: 20px;
+            color: #2c3e50;
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        h2 {
+            font-size: 2em;
+            color: #2c3e50;
+            margin-bottom: 20px;
+            text-align: center;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Container Styling */
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        /* Individual Section Styling */
+        .section {
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 30%;
+            min-width: 250px;
+            animation: fadeInUp 1.5s ease forwards;
+            opacity: 0;
+            transition: transform 0.3s;
+        }
+
+        .section:hover {
+            transform: translateY(-10px);
+        }
+
+        .section h2 {
+            font-size: 1.8em;
+            color: #1e90ff;
+        }
+
+        .recommendations {
+            list-style: none;
+            padding: 0;
+        }
+
+        .recommendations li {
+            padding: 10px 0;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .recommendations li:last-child {
+            border: none;
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Styling */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .section {
+                width: 100%;
+            }
+        }
+        .bg{
+            background-image: url("bg1.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+</style>
+</head>
+<body>
+
+    <div class="bg">
+        <section class="hero">
+            <div class="container">
+                <h1>SELF-HELP RECOMMENDATIONS</h1>
+                
+            </div>
+        </section>
+
+
+    
+
+    <div class="container">
+        <!-- Book Recommendations -->
+        <div class="section" style="animation-delay: 0.2s;">
+            <h2><b>BOOK RECOMMENDATIONS</b></h2>
+            <ul class="recommendations">
+                <li><strong>1. The Power of Now</strong> by Eckhart Tolle</li>
+                <li><strong>2. Atomic Habits</strong> by James Clear</li>
+                <li><strong>3. The 7 Habits of Highly Effective People</strong> by Stephen R. Covey</li>
+                <li><strong>4. The Power of Now</strong> by Eckhart Tolle</li>
+                <li><strong>5. Daring Greatly</strong> by Brené Brown</li>
+                <li><strong>6. Mindset: The New Psychology of Success</strong> by Carol S. Dweck</li>
+                <li><strong>7. The Four Agreements</strong> by Don Miguel Ruiz</li>
+            </ul>
+        </div>
+
+        <!-- Podcast Recommendations -->
+        <div class="section" style="animation-delay: 0.4s;">
+            <h2><b>PODCAST RECOMMENDATIONS</b></h2>
+            <ul class="recommendations">
+                <li><strong>1. The Tim Ferriss Show</strong></li>
+                <li><strong>2. The Tony Robbins Podcast</strong></li>
+                <li><strong>3. The Minimalists Podcast</strong></li>
+                <li><strong>4. The School of Greatness</strong> by Lewis Howes</li>
+                <li><strong>5. Oprah’s SuperSoul Conversations</strong></li>
+                <li><strong>6. Happier with Gretchen Rubin</strong></li>
+                <li><strong>7. The Daily Stoic Podcast</strong></li>
+            </ul>
+        </div>
+
+        <!-- Blog Recommendations -->
+        <div class="section" style="animation-delay: 0.6s;">
+            <h2><b>BLOG RECOMMENDATIONS</b></h2>
+            <ul class="recommendations">
+                <li><strong>1. Zen Habits</strong> by Leo Babauta</li>
+                <li><strong>2. Mark Manson’s Blog</strong></li>
+                <li><strong>3. Tiny Buddha</strong></li>
+                <li><strong>4. James Clear’s Blog</strong></li>
+                <li><strong>5. Becoming Minimalist</strong> by Joshua Becker</li>
+                <li><strong>6. The Positivity Blog</strong></li>
+                <li><strong>7. Marie Forleo’s Blog</strong></li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

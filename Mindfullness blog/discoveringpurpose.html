@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovering Purpose</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff; /* Light blue */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Main section */
+        .hero {
+            background-color: #431c1c; /* Light pink */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: slideDown 1.5s ease-in-out;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: white;
+            max-width: 700px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Section with information */
+        .content-section {
+            padding: 80px 20px;
+            background-color:beige; /* Light peach */
+            text-align: center;
+        }
+        
+        .content-section h2 {
+            color: #005f99; /* Light blue */
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .content-section .row {
+            margin-bottom: 50px;
+        }
+        
+        .content-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        
+        .content-section p {
+            font-size: 1.1rem;
+            color: #4a4a4a;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        /* Footer */
+        footer {
+           background:black;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 0;
+            color:white;
+        }
+        .head{
+            text-align:left;
+        }
+
+        
+        body{
+            background-color:beige;
+          
+        }
+        .head2{
+            text-align:left;
+            margin-left:70px;
+        }
+        .img2{
+            height:200px;
+            width:400px;
+           border-radius:10px;
+           overflow:hidden
+        }
+        .img2{
+            transition:transform 0.5s ease;
+        }
+        .img2:hover{
+            transform: scale(1.1);
+        }
+       
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Discovering Purpose</h1>
+            <p class="para">Discovering purpose is a journey of self-reflection and growth, where passion meets values. It’s about uncovering what truly drives you, finding meaning in your actions, and making an impact on the world. Through evolving experiences, purpose guides you toward fulfillment, clarity, and a deeper connection to life.</p>
+        </div>
+    </section>
+
+    <!-- Content Section 1 -->
+     <div class="img-container">
+    <section class="content-section">
+        <div class="container">
+            <h2><b>SELF REFLECTION</b></h2>
+            
+            <h3 class="head"><b>VALUES IDENTIFICATION</b></h3>
+            <br>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="core values.jpg" alt="values identification" class="img2" height="200px" width="400px">
+                </div>
+                <div class="col-md-6">
+                    <p class="para">Values identification is the journey of uncovering your core beliefs that guide decisions and actions. By aligning with values like integrity and compassion, you cultivate authenticity and fulfillment. This alignment serves as a compass, steering you toward a meaningful, purpose-driven life, enriching relationships and enhancing your sense of belonging.</p>
+                </div>
+            </div>
+           
+            </div>
+            
+        
+    </section>
+
+    <section class="container-fluid py-5" id="self-reflection">
+        <h3 class="head2"><b>STRENGTHS AND WEAKNESSES</b></h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <h2 class="mb-4">STRENGTHS AND WEAKNESSES</h2> -->
+            <p class="mb-3">Identifying strengths and weaknesses involves self-reflection to understand what you excel at and where you can improve. Embracing your strengths fosters confidence and clarity, while acknowledging weaknesses promotes growth. This awareness empowers you to leverage talents effectively, build resilience, and continuously evolve toward your goals, enriching your personal and professional life.</p>
+           
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="strength and weaknesses.jpg" class="img2" alt="strength and weaknesses" height="100px" width="300px">
+          </div>
+        </div>
+      </section>
+
+    <!-- Content Section 2 -->
+    <section class="content-section">
+        <div class="container">
+            <h2><b>CONTRIBUTION TO OTHERS</b></h2>
+            
+            <h3 class="head"><b>COMMUNITY ENGAGEMENT</b></h3>
+            <br>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="community engagement.jpg" alt="community engagement" class="img2" height="200px" width="400px">
+                </div>
+                <div class="col-md-6">
+                    <p class="para">Community engagement is the process of connecting individuals and organizations to enhance social, cultural, and economic well-being. It fosters collaboration, empowerment, and inclusivity, allowing diverse voices to shape shared goals. By actively participating, individuals cultivate relationships, build trust, and create lasting impact, ultimately enriching the fabric of their community.</p>
+                </div>
+            </div>
+           
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid py-5" id="self-reflection"></section>
+        <h3 class="head2"><b>LEGACY BUILDING</b></h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <h2 class="mb-4">STRENGTHS AND WEAKNESSES</h2> -->
+            <p class="mb-3">Legacy building is the intentional act of creating a lasting impact that extends beyond one's lifetime. It involves establishing values, nurturing relationships, and contributing positively to society. By sharing knowledge, resources, and experiences, individuals inspire future generations, ensuring their contributions resonate and continue to influence lives long after they are gone.</p>
+           
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="legacy building.jpg" class="img2" alt="legacy building">
+          </div>
+        </div>
+      </section>
+
+    <!-- Content Section 3 -->
+    <section class="content-section">
+        <div class="container">
+            <h2><b>LIFE EXPERIENCES</b></h2>
+            <h3 class="head"><b>ADAPTING TO CHANGE</b></h3>
+            <br>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="adapting to change.jpg" alt="adapting to change" class="img2" height="200px" width="400px">
+                </div>
+                <div class="col-md-6">
+                    <p class="para">Adapting to change is the ability to embrace new circumstances and adjust one's mindset and actions accordingly. It involves resilience, flexibility, and a willingness to learn from experiences. By viewing change as an opportunity for growth, individuals can navigate uncertainty, discover new possibilities, and thrive in ever-evolving environments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-5" id="self-reflection">
+        <h3 class="head2"><b>OVERCOMING ADVERSITY</b></h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <h2 class="mb-4">STRENGTHS AND WEAKNESSES</h2> -->
+            <p class="mb-3">Overcoming adversity is the journey of confronting and rising above challenges and obstacles. It requires inner strength, determination, and perseverance. Through adversity, individuals often discover their true potential, gaining valuable insights and resilience. This transformative process fosters personal growth, enabling one to emerge stronger and more empowered to face future challenges.</p>
+           
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="overcoming adversity.jpg" class="img2" alt="overcoming adversity">
+          </div>
+        </div>
+      </section>
+    
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Purpose. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+   
+</body>
+</html>

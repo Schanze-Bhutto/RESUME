@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is Purpose?</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color:beige;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Main section */
+        .hero {
+            background-color: #431c1c; /* Light pink */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: slideDown 1.5s ease-in-out;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: white;
+            max-width: 700px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Section with information */
+        .content-section {
+            padding: 80px 20px;
+            background-color:beige;
+            text-align: center;
+        }
+        
+        .content-section h2 {
+            color: #005f99; /* Light blue */
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .content-section .row {
+            margin-bottom: 50px;
+        }
+        
+        .content-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        
+        .content-section p {
+            font-size: 1.1rem;
+            color: #4a4a4a;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        /* Footer */
+        footer {
+            background-color:black;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 0;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>What is Purpose?</h1>
+            <p>Purpose is the driving force that gives our lives meaning, direction, and motivation. It helps us understand why we do what we do and guides us to live a fulfilling life, rich with passion and focus.</p>
+        </div>
+    </section>
+
+    <!-- Content Section 1 -->
+    <section class="content-section">
+        <div class="container">
+            <h2><b>Discovering Your True Purpose</b></h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="finding purpose.jpg" alt="Purpose Image 1" height="200px" width="400px">
+                </div>
+                <div class="col-md-6">
+                    <p>Finding your true purpose is a personal journey. It's about exploring your passions, identifying your core values, and aligning them with what truly fulfills you. Your purpose is not static, but a dynamic and evolving part of you. It can grow, change, and deepen with time.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section 2 -->
+    <section class="content-section">
+        <div class="container">
+            <h2><b>Living a Purposeful Life</b></h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 order-md-2 mb-4 mb-md-0">
+                    <img src="purposeful life.jpg" alt="Purpose Image 2" height="200px" width="400px">
+                </div>
+                <div class="col-md-6 order-md-1">
+                    <p>To live a purposeful life, you must set clear intentions and focus on what truly matters. When we live with purpose, we wake up each day with energy, knowing we are contributing to something larger than ourselves. This clarity of direction leads to greater fulfillment, satisfaction, and happiness.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Section 3 -->
+    <section class="content-section">
+        <div class="container">
+            <h2><b>Impacting the World with Purpose</b></h2>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="impactingworld.jpg" alt="Purpose Image 3" height="200px" width="400px">
+                </div>
+                <div class="col-md-6">
+                    <p>Your purpose is not only about yourself. It's about how you can make a positive impact on the world. When you live aligned with your purpose, your actions inspire others, and you contribute to a greater cause. This is how purpose becomes a ripple effect, transforming both your life and the lives of others.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Purpose. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+   
+</body>
+</html>

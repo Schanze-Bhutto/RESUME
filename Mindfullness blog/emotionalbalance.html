@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>emotional balance</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f8ff; /* Light blue */
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Main section */
+        .hero {
+            background-color: #431c1c; /* Light pink */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            color: white;
+            font-weight: 600;
+            margin-bottom: 20px;
+            animation: slideDown 1.5s ease-in-out;
+        }
+        
+        .hero p {
+            font-size: 20px;
+            color: white;
+            max-width: 700px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+        
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        /* Section with information */
+        .content-section {
+            padding: 80px 20px;
+            background-color:beige; /* Light peach */
+            text-align: center;
+        }
+        
+        .content-section h2 {
+            color: #005f99; /* Light blue */
+            margin-bottom: 40px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        .content-section .row {
+            margin-bottom: 50px;
+        }
+        
+        .content-section img {
+            max-width: 100%;
+            border-radius: 10px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+        
+        .content-section p {
+            font-size: 1.1rem;
+            color: #4a4a4a;
+            padding: 0 20px;
+            animation: fadeIn 2s ease-in-out;
+        }
+        
+        /* Footer */
+        footer {
+           background:black;
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        footer p {
+            margin: 0;
+            color:white;
+        }
+        .head{
+            text-align:left;
+        }
+
+        
+        body{
+            background-color:beige;
+          
+        }
+        .head2{
+            text-align:left;
+            margin-left:70px;
+        }
+        .img2{
+            height:200px;
+            width:400px;
+           border-radius:10px;
+           overflow:hidden
+        }
+        .img2{
+            transition:transform 0.5s ease;
+        }
+        .img2:hover{
+            transform: scale(1.1);
+        }
+       
+    </style>
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Emotional Balance</h1>
+            <p class="para">Emotional balance refers to the ability to manage and respond to feelings in a healthy way. It involves recognizing emotions, understanding their impact, and maintaining a steady state of mind. Achieving emotional balance enhances resilience, improves relationships, and fosters well-being, allowing individuals to navigate life's challenges with greater ease and confidence.</p>
+        </div>
+    </section>
+
+    <!-- Content Section 1 -->
+     <div class="img-container">
+    <section class="content-section">
+        <div class="container">
+            <h2><b>EMOTIONAL AWARENESS</b></h2>
+            
+            <h3 class="head"><b>IDENTIFYING EMOTIONS</b></h3>
+            <br>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="labelling emotions.jpg" alt="labelling emotions" class="img2">
+                </div>
+                <div class="col-md-6">
+                    <p class="para">Identifying and labeling emotions is a crucial skill for emotional intelligence. By recognizing and naming feelings, individuals gain insight into their emotional states, allowing for better understanding and management. This awareness fosters self-acceptance, improves communication, and enhances relationships, empowering individuals to respond thoughtfully rather than react impulsively </p>
+                </div>
+            </div>
+           
+            </div>
+            
+        
+    </section>
+
+    <section class="container-fluid py-5" id="self-reflection">
+        <h3 class="head2"><b>JOURNALLING</b></h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <h2 class="mb-4">STRENGTHS AND WEAKNESSES</h2> -->
+            <p class="mb-3">Journaling for emotional clarity is a powerful practice that promotes self-reflection and insight. Writing about thoughts and feelings helps individuals process emotions, identify patterns, and gain perspective. This therapeutic technique fosters emotional regulation, enhances self-awareness, and provides a safe space for expression, ultimately leading to greater mental well-being and clarity.</p>
+           
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="journalling.jpg" class="img2" alt="journaling">
+          </div>
+        </div>
+      </section>
+
+    <!-- Content Section 2 -->
+    <section class="content-section">
+        <div class="container">
+            <h2><b>COPING STRATEGIES</b></h2>
+            
+            <h3 class="head"><b>REFRAMING NEGATIVE THOUGHTS</b></h3>
+            <br>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="reframing negative thoughts.jpg" alt="reframing negative thoughts" class="img2" >
+                </div>
+                <div class="col-md-6">
+                    <p class="para">Techniques for reframing negative thoughts are essential for fostering a positive mindset. By challenging irrational beliefs and replacing them with constructive alternatives, individuals can shift their perspectives. Cognitive restructuring, positive affirmations, and mindfulness practices help reduce anxiety and promote resilience, empowering individuals to approach challenges with a more optimistic outlook.</p>
+                </div>
+            </div>
+           
+            </div>
+        </div>
+    </section>
+
+    <section class="container-fluid py-5" id="self-reflection"></section>
+        <h3 class="head2"><b>SEEKING PROFESSIONAL HELP</b></h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <h2 class="mb-4">STRENGTHS AND WEAKNESSES</h2> -->
+            <p class="mb-3">Seeking professional support through therapy or counseling is vital for emotional well-being. Trained therapists provide guidance, tools, and a safe space for individuals to explore their feelings and challenges. This collaborative process fosters personal growth, enhances coping strategies, and promotes healing, ultimately empowering individuals to navigate life’s complexities with confidence and clarity.</p>
+           
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="seeking prof help.jpg" class="img2" alt="seek prof help">
+          </div>
+        </div>
+      </section>
+
+    <!-- Content Section 3 -->
+    <section class="content-section">
+        <div class="container">
+            <h2><b>MINDFULLNESS PRACTICES</b></h2>
+            <h3 class="head"><b>BREATHING EXCERCISES</b></h3>
+            <br>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="breathing excercises.jpg" alt="breathing excercises" class="img2">
+                </div>
+                <div class="col-md-6">
+                    <p class="para">Breathing exercises for calmness are effective techniques to reduce stress and promote relaxation. Simple practices, such as deep breathing and box breathing, help activate the body's relaxation response. By focusing on breath control, individuals can cultivate mindfulness, lower anxiety levels, and enhance emotional stability, leading to improved overall well-being.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container-fluid py-5" id="self-reflection">
+        <h3 class="head2"><b>GUIDED MEDITATION</b></h3>
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <!-- <h2 class="mb-4">STRENGTHS AND WEAKNESSES</h2> -->
+            <p class="mb-3">Guided meditation and visualization techniques are powerful tools for enhancing mental clarity and emotional balance. These practices involve following a facilitator's instructions to enter a relaxed state, promoting mindfulness and self-awareness. By visualizing positive outcomes, individuals can foster resilience, reduce stress, and cultivate a greater sense of peace and fulfillment.</p>
+           
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="meditation.jpg" class="img2" alt="guided meditation">
+          </div>
+        </div>
+      </section>
+    
+
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Balance. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+   
+</body>
+</html>
